@@ -9,41 +9,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.jpeg" alt="Bootstrap" width="80" height="70">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="perfumes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Perfumes
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#mujer">Mujer</a></li>
-                  <li><a class="dropdown-item" href="#hombre"> Hombre   </a></li>
-                  
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link "  href="maquillaje.html">Maquillaje</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+    <div class="row px-2">
+      <div class="col">
+        <nav class="navbar rosadito navbar-expand-lg ">
+          <div class="container-lg px-2">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.jpeg" alt="Bootstrap" width="200" height="200">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
           </div>
-        </div>
+
+          <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active fs-4" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fs-4" href="perfumes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Perfumes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item fs-4" href="#mujer">Mujer</a></li>
+                    <li><a class="dropdown-item fs-4" href="#hombre">Hombre</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 " href="maquillaje.html" >Maquillaje</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 px-5 " type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-dark  text-white" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
       </nav>
+      </div>
+    </div>
+
+
       <section class="container-lg" id="mujer">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 pt-1 pb-3">
@@ -52,19 +59,15 @@
                         <h2>Dama</h2>
                             <p>Estas son las lociones o perfumes que manejamos (somos una reventa de productos), de diferentes marcas como>: Yanbal, Esika, L'bel, Cyzone,Carmel,Pacifika,Novaventa, etc. </p>
                     </div>
-                    <div class="col-md-6 col-lg-3 p-2">
-                        <div class="card" >
-                            <img src="img/blue.mujer.webp" class="card-img-top" alt="blue">
-                            <div class="card-body">
-                              <h5 class="card-title">Blue</h5>
-                            </div>
-                        </div>    
-                    </div>
+                   
                     <div class="col-md-6 col-lg-3 p-2">
                         <div class="card" >
                             <img src="img/vibranza_mujer.jpg" class="card-img-top" alt="blue">
                             <div class="card-body">
                               <h5 class="card-title">Vibranza</h5>
+                              <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                                Comprar
+                              </button>
                             </div>
                         </div>    
                     </div>
@@ -73,14 +76,33 @@
                             <img src="img/pasion_mujer.jpg" class="card-img-top" alt="blue">
                             <div class="card-body">
                               <h5 class="card-title">Pasión</h5>
+                              <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                                Comprar
+                              </button>
                             </div>
                         </div>    
                     </div>
+                    <div class="col-md-6 col-lg-3 p-2">
+                      <div class="card" >
+                          <img src="img/blue.mujer.webp" class="card-img-top" alt="blue">
+                          <div class="card-body">
+                            <h5 class="card-title">Blue</h5>
+
+                            <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                              Comprar
+                            </button>
+                              
+                          </div>
+                      </div>    
+                  </div>
                     <div class="col-md-6 col-lg-3 p-2">
                         <div class="card" >
                             <img src="img/prints_mujer.webp" class="card-img-top" alt="blue">
                             <div class="card-body">
                               <h5 class="card-title">Prints</h5>
+                              <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                                Comprar
+                              </button>
                             </div>
                         </div>    
                     </div>
@@ -89,33 +111,151 @@
                             <img src="img/purple_berry_mujer.webp" class="card-img-top" alt="blue">
                             <div class="card-body">
                               <h5 class="card-title">Purple berry</h5>
+                              <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                                Comprar
+                              </button>
                             </div>
                         </div>    
                     </div>
+
                     <div class="col-md-6 col-lg-3 p-2">
                         <div class="card" >
                             <img src="img/cielo_mujer.webp" class="card-img-top" alt="blue">
                             <div class="card-body">
                               <h5 class="card-title">Cielo</h5>
+                              <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                                Comprar
+                              </button>
                             </div>
                         </div>    
                     </div>
+
                     <div class="col-md-6 col-lg-3 p-2">
                         <div class="card" >
                             <img src="img/mithyka.webp" class="card-img-top" alt="blue">
                             <div class="card-body">
                               <h5 class="card-title">Mithyka</h5>
+                              <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                                Comprar
+                              </button>
                             </div>
                         </div>    
                     </div>
+
                     <div class="col-md-6 col-lg-3 p-2">
                         <div class="card" >
                             <img src="img/satin_rouge_mujer.webp" class="card-img-top" alt="blue">
                             <div class="card-body">
                               <h5 class="card-title">Satin rouge</h5>
+                              <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                                Comprar
+                              </button>
                             </div>
                         </div>    
                     </div>
+
+
+
+
+
+                    <div class="col-md-6 col-lg-3 p-2">
+                      <div class="card" >
+                          <img src="img/expression.jpg" class="card-img-top" alt="blue">
+                          <div class="card-body">
+                            <h5 class="card-title">Ccori</h5>
+                            <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                              Comprar
+                            </button>
+                          </div>
+                      </div>    
+                  </div>
+
+                    <div class="col-md-6 col-lg-3 p-2">
+                      <div class="card" >
+                          <img src="img/soy-sexy.jpg" class="card-img-top" alt="blue">
+                          <div class="card-body">
+                            <h5 class="card-title">soy sexy y soy latina</h5>
+                            <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                              Comprar
+                            </button>
+                          </div>
+                      </div>    
+                  </div>
+
+                  <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card" >
+                        <img src="img/ccori.jpg" class="card-img-top" alt="blue">
+                        <div class="card-body">
+                          <h5 class="card-title">Ccori</h5>
+                          <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                            Comprar
+                          </button>
+                        </div>
+                    </div>    
+                </div>
+
+                  <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card" >
+                        <img src="img/bloqueador.jpg" class="card-img-top" alt="blue">
+                        <div class="card-body">
+                          <h5 class="card-title">bloqueador total block</h5>
+                          <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                            Comprar
+                          </button>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                  <div class="card" >
+                      <img src="img/Impredecible.jpg" class="card-img-top" alt="Impredecible">
+                      <div class="card-body">
+                        <h5 class="card-title">Impredecible</h5>
+                        <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                          Comprar
+                        </button>
+                      </div>
+                  </div>    
+              </div>
+
+                
+              <div class="col-md-6 col-lg-3 p-2">
+                <div class="card" >
+                    <img src="img/Dream.jpg" class="card-img-top" alt="blue">
+                    <div class="card-body">
+                      <h5 class="card-title">Dream</h5>
+                      <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                        Comprar
+                      </button>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="col-md-6 col-lg-3 p-2">
+              <div class="card" >
+                  <img src="img/Mia.jpg" class="card-img-top" alt="Impredecible">
+                  <div class="card-body">
+                    <h5 class="card-title">Mia</h5>
+                    <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                      Comprar
+                    </button>
+                  </div>
+              </div>    
+          </div>
+        
+          <div class="col-md-6 col-lg-3 p-2">
+            <div class="card" >
+                <img src="img/sweet black.jpg" class="card-img-top" alt="blue">
+                <div class="card-body">
+                  <h5 class="card-title">sweet black</h5>
+                  <button type="button" class="btn rosadito" data-bs-toggle="modal" data-bs-target="#compraModalCentrado">
+                    Comprar
+                  </button>
+                </div>
+            </div>    
+        </div>         
+
+            
                 </div> 
             </div>
         </div> 
@@ -193,25 +333,58 @@
                             </div>
                         </div>    
                     </div>
-                </div> 
+                    <div class="col-md-6 col-lg-3 p-2">
+                      <div class="card" >
+                          <img src="img/devos.jpg" class="card-img-top" alt="blue">
+                          <div class="card-body">
+                            <h5 class="card-title">Devos</h5>
+                          </div>
+                      </div>    
+                  </div>
+                  <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card" >
+                        <img src="img/D'antan.jpg" class="card-img-top" alt="blue">
+                        <div class="card-body">
+                          <h5 class="card-title">D'antan</h5>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-6 col-lg-3 p-2">
+                  <div class="card" >
+                      <img src="img/Extreme.png" class="card-img-top" alt="blue">
+                      <div class="card-body">
+                        <h5 class="card-title">Extreme</h5>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-2">
+                  <div class="card" >
+                      <img src="img/new code.jpg" class="card-img-top" alt="blue">
+                      <div class="card-body">
+                        <h5 class="card-title">new code</h5>
+                      </div>
+                  </div>
+                </div>
+
+
             </div>
         </div> 
       </section>
       <section class="container-lg">
         <div class="row">
-            <div class="col">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
+            <div class="col ">
+                <nav aria-label="Page navigation example  ">
+                    <ul class="pagination ">
                       <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
+                        <a class="page-link rosadito" href="index.html" aria-label="Previous">
                           <span aria-hidden="true">&laquo;</span>
                         </a>
                       </li>
-                      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                      <li class="page-item"><a class="page-link" href="perfumes.html">2</a></li>
-                      <li class="page-item"><a class="page-link" href="maquillaje.html">3</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="index.html">1</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="perfumes.html">2</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="maquillaje.html">3</a></li>
                       <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
+                        <a class="page-link rosadito" href="maquillaje.html" aria-label="Next">
                           <span aria-hidden="true">&raquo;</span>
                         </a>
                       </li>
@@ -221,47 +394,88 @@
         </div>
     </section>
 
-      <footer class="bg-dark text-white ">
-        <div class="row text-aling-center p-2">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <h3>Ubicación</h3>
-                        <p class="">Dosquebradas/Risaralda</p>
-                        <p>Urbanización Nuevo Milenium</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h3>Contactos</h3>
-                        <p>Celular: 3136390872</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h3>Politicas</h3>
-                        <p>Terminos y condiciones</p> 
-                        <p>Politica de tratamiento de datos</p>
-                        <p>Politica de envios</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="row ">
-                            <div class="col-10">
-                                <h3>Siguenos en</h3>
+
+      <!-- Modal -->
+      <div class="modal fade" id="compraModalCentrado" tabindex="-1" aria-labelledby="compraModalCentradoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title textrosa" id="compraModalCentradoLabel">Formulario de Compra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="direccion" class="form-label">Dirección</label>
+                  <textarea class="form-control" id="direccion" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="tarjeta" class="form-label">Número de Tarjeta</label>
+                  <input type="text" class="form-control" id="tarjeta" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn rosadito">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="rosadito  ">
+      <div class="row text-aling-center p-2">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="row">
+                  <div class="col-md-6 col-lg-3">
+                      <h3>Ubicación</h3>
+                      <p class="">Dosquebradas/Risaralda</p>
+                      <p>Urbanización Nuevo Milenium</p>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h3>Contactos</h3>
+                      <p>Celular: 3136390872</p>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h3>Politicas</h3>
+                      <p>Terminos y condiciones</p> 
+                      <p>Politica de tratamiento de datos</p>
+                      <p>Politica de envios</p>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <div class="row ">
+                          <div class="col-10">
+                              <h3>Siguenos en</h3>
+                          </div>
+                          <div class="col-3">
+                              <i class="fs-1 bi bi-facebook"></i>
                             </div>
                             <div class="col-3">
-                                <i class="fs-1 bi bi-facebook"></i>
-                              </div>
-                              <div class="col-3">
-                                <i class=" fs-1 bi bi-whatsapp"></i>
-                              </div> 
-                        </div>                    
-                    </div>
-                    <div class="col-12">
-                        <p>copyright 2006.©/Todos los derechos reservados</p>
-                        <p>Diseñado por Fernanda ltda</p>
-                    </div>
-                </div>             
-            </div>
-        </div>
+                              <i class=" fs-1 bi bi-whatsapp"></i>
+                            </div> 
+                      </div>                    
+                  </div>
+                  <div class="col-12">
+                      <p>copyright 2006.©/Todos los derechos reservados</p>
+                      <p>Diseñado por Fernanda ltda</p>
+                  </div>
+              </div>             
+          </div>
+      </div>
 
-      </footer>
+    </footer>
+
+        
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

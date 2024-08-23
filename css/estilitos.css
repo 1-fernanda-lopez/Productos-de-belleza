@@ -1,0 +1,16 @@
+.rosadito{
+    background-color: rgb(247, 182, 255);
+}
+
+.textrosa{
+    color: rgb(49, 0, 96);
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+  }

@@ -9,50 +9,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.jpeg" alt="Bootstrap" width="80" height="70">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="perfumes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Perfumes
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#mujer">Mujer</a></li>
-                  <li><a class="dropdown-item" href="#hombre"> Hombre   </a></li>
-                  
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link "  href="maquillaje.html">Maquillaje</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+    <div class="row px-2">
+      <div class="col">
+        <nav class="navbar rosadito navbar-expand-lg ">
+          <div class="container-lg px-2">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.jpeg" alt="Bootstrap" width="200" height="200">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
           </div>
-        </div>
+
+          <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active fs-4" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fs-4" href="perfumes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Perfumes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item fs-4" href="#mujer">Mujer</a></li>
+                    <li><a class="dropdown-item fs-4" href="#hombre">Hombre</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 " href="maquillaje.html" >Maquillaje</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 px-5 " type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-dark  text-white" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
       </nav>
+      </div>
+    </div>
 
 
-      <section class="container-lg">
+      <section class="container-lg pt-4 pb-4">
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button rosadito" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Pestañinas
                         </button>
                       </h2>
@@ -77,15 +82,30 @@
                                         </div>
                                     </div>    
                                 </div>
-            
+                                <div class="col-md-6 col-lg-6 p-2">
+                                  <div class="card" >
+                                      <img src="img/Magazine.jpg" class="card-img-top" alt="blue">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Pestañina - Magazine</h5>
+                                       
+                                      </div>
+                                  </div>    
+                              </div>
+                              <div class="col-md-6 col-lg-6 p-2">
+                                <div class="card" >
+                                    <img src="img/mascara air.webp" class="card-img-top" alt="blue">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Pestañina - Air</h5>
+                                    </div>
+                                </div>    
                             </div>
-        
+                            </div>
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed rosadito" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                           Labiales
                         </button>
                       </h2>
@@ -116,14 +136,31 @@
                                         </div>
                                     </div>    
                                 </div>
-            
+                                <div class="col-md-6 col-lg-6 p-2">
+                                    <div class="card" >
+                                        <img src="img/alma nude.jpg" class="card-img-top" alt="blue">
+                                      <div class="card-body">
+                                        <h5 class="card-title">
+                                          alma nude</h5>
+                                      </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-6 col-lg-6 p-2">
+                                  <div class="card" >
+                                      <img src="img/lip labial mate liquido.jpg" class="card-img-top" alt="blue">
+                                    <div class="card-body">
+                                      <h5 class="card-title">
+                                        lip labial mate liquido rosa</h5>
+                                    </div>
+                                  </div>    
+                              </div>
                             </div>
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed rosadito" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                           Sombras
                         </button>
                       </h2>
@@ -149,6 +186,26 @@
                                     </div>    
                                 </div>
                                 <div class="col-md-6 col-lg-6 p-2">
+                                  <div class="card" >
+                                      <img src="img/paleta de sombras profe eye pro.webp" class="card-img-top" alt="blue">
+                                      <div class="card-body">
+                                        <h5 class="card-title">/paleta de sombras profe eye pro</h5>
+                                        
+                                         
+                                      </div>
+                                  </div>    
+                              </div>
+                              <div class="col-md-6 col-lg-6 p-2">
+                                <div class="card" >
+                                    <img src="img/sombra ojos.webp" class="card-img-top" alt="blue">
+                                    <div class="card-body">
+                                      <h5 class="card-title">/paleta de sombras </h5>
+                                      
+                                       
+                                    </div>
+                                </div>    
+                            </div>
+                                <div class="col-md-6 col-lg-6 p-2">
                                     <div class="card" >
                                         <img src="img/sombra_cyzone.jpg" class="card-img-top" alt="blue">
                                         <div class="card-body">
@@ -165,7 +222,9 @@
                                             </p>
                                             
                                         </div>
-                                    </div>    
+                                    </div>   
+                                    
+                                    
                                 </div>
             
                             </div>
@@ -178,32 +237,21 @@
         
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
       <section class="container-lg">
         <div class="row">
-            <div class="col">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
+            <div class="col ">
+                <nav aria-label="Page navigation example  ">
+                    <ul class="pagination ">
                       <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
+                        <a class="page-link rosadito" href="index.html" aria-label="Previous">
                           <span aria-hidden="true">&laquo;</span>
                         </a>
                       </li>
-                      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                      <li class="page-item"><a class="page-link" href="perfumes.html">2</a></li>
-                      <li class="page-item"><a class="page-link" href="maquillaje.html">3</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="index.html">1</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="perfumes.html">2</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="maquillaje.html">3</a></li>
                       <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
+                        <a class="page-link rosadito" href="maquillaje.html" aria-label="Next">
                           <span aria-hidden="true">&raquo;</span>
                         </a>
                       </li>
@@ -212,47 +260,49 @@
             </div>
         </div>
     </section>
-      <footer class="bg-dark text-white ">
-        <div class="row text-aling-center p-2">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <h3>Ubicación</h3>
-                        <p class="">Dosquebradas/Risaralda</p>
-                        <p>Urbanización Nuevo Milenium</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h3>Contactos</h3>
-                        <p>Celular: 3136390872</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h3>Politicas</h3>
-                        <p>Terminos y condiciones</p> 
-                        <p>Politica de tratamiento de datos</p>
-                        <p>Politica de envios</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="row ">
-                            <div class="col-10">
-                                <h3>Siguenos en</h3>
+
+
+    <footer class="rosadito  ">
+      <div class="row text-aling-center p-2">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="row">
+                  <div class="col-md-6 col-lg-3">
+                      <h3>Ubicación</h3>
+                      <p class="">Dosquebradas/Risaralda</p>
+                      <p>Urbanización Nuevo Milenium</p>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h3>Contactos</h3>
+                      <p>Celular: 3136390872</p>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <h3>Politicas</h3>
+                      <p>Terminos y condiciones</p> 
+                      <p>Politica de tratamiento de datos</p>
+                      <p>Politica de envios</p>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                      <div class="row ">
+                          <div class="col-10">
+                              <h3>Siguenos en</h3>
+                          </div>
+                          <div class="col-3">
+                              <i class="fs-1 bi bi-facebook"></i>
                             </div>
                             <div class="col-3">
-                                <i class="fs-1 bi bi-facebook"></i>
-                              </div>
-                              <div class="col-3">
-                                <i class=" fs-1 bi bi-whatsapp"></i>
-                              </div> 
-                        </div>                    
-                    </div>
-                    <div class="col-12">
-                        <p>copyright 2006.©/Todos los derechos reservados</p>
-                        <p>Diseñado por Fernanda ltda</p>
-                    </div>
-                </div>             
-            </div>
-        </div>
+                              <i class=" fs-1 bi bi-whatsapp"></i>
+                            </div> 
+                      </div>                    
+                  </div>
+                  <div class="col-12">
+                      <p>copyright 2006.©/Todos los derechos reservados</p>
+                      <p>Diseñado por Fernanda ltda</p>
+                  </div>
+              </div>             
+          </div>
+      </div>
 
-      </footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>   

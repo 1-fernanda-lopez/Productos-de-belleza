@@ -9,48 +9,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.jpeg" alt="Bootstrap" width="80" height="70">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="perfumes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Perfumes
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#mujer">Mujer</a></li>
-                  <li><a class="dropdown-item" href="#hombre">Hombre</a></li>
-                  
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="maquillaje.html" >Maquillaje</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+    <div class="row px-2">
+      <div class="col">
+        <nav class="navbar rosadito navbar-expand-lg ">
+          <div class="container-lg px-2">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.jpeg" alt="Bootstrap" width="200" height="200">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
           </div>
-        </div>
+
+          <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active fs-4" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fs-4" href="perfumes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Perfumes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item fs-4" href="#mujer">Mujer</a></li>
+                    <li><a class="dropdown-item fs-4" href="#hombre">Hombre</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 " href="maquillaje.html" >Maquillaje</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 px-5 " type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-dark  text-white" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
       </nav>
+      </div>
+    </div>
+    
 
       <section class="container-lg">
-        <div class="row ">
+        <div class="row p-3 ">
             <div class="col ">
-                <h1 class="text-center">Productos De Belleza Faricher</h1>
+                <h1 class="text-center textrosa">Productos De Belleza Faricher</h1>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide pt-3">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -59,16 +65,16 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/1.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/1este.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/2.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/2.este.jpeg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/3.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/3este.jpeg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/4.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/4este.jpeg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -88,12 +94,12 @@
             <div class="col">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
-                        <div class="card">
+                        <div class="card hover">
                             <img src="img/que_son_los_perfumes.webp" class="card-img-top" alt="ohm yanbal">
                             <div class="card-body">
                                 <h5 class="card-title">Perfumes</h5>
                                 <p class="card-text">El perfume es una mezcla que contiene sustancias aromáticas, pudiendo ser éstas aceites esenciales naturales o esencias sintéticas; un disolvente que puede ser sólido o líquido (alcohol en la mayoría de los casos) y un fijador, utilizado para proporcionar un agradable y duradero aroma.</p>
-                                <a href="perfumes.html" class="btn btn-primary">Perfumes</a>
+                                <a href="perfumes.html" class="btn rosadito">Perfumes</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +109,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Maquillaje</h5>
                                 <p class="card-text">El maquillaje es la práctica de decorar la piel y otras partes visibles del cuerpo para resaltarlas o mejorar su aspecto, apelando a productos cosméticos.</p>
-                                <a href="maquillaje.html" class="btn btn-primary">Maquijalle</a>
+                                <a href="maquillaje.html" class="btn rosadito">Maquijalle</a>
                             </div>
                         </div>
                     </div>
@@ -114,19 +120,19 @@
          
     <section class="container-lg">
         <div class="row">
-            <div class="col">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
+            <div class="col ">
+                <nav aria-label="Page navigation example  ">
+                    <ul class="pagination ">
                       <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
+                        <a class="page-link rosadito" href="index.html" aria-label="Previous">
                           <span aria-hidden="true">&laquo;</span>
                         </a>
                       </li>
-                      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                      <li class="page-item"><a class="page-link" href="perfumes.html">2</a></li>
-                      <li class="page-item"><a class="page-link" href="maquillaje.html">3</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="index.html">1</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="perfumes.html">2</a></li>
+                      <li class="page-item "><a class="page-link rosadito" href="maquillaje.html">3</a></li>
                       <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
+                        <a class="page-link rosadito" href="maquillaje.html" aria-label="Next">
                           <span aria-hidden="true">&raquo;</span>
                         </a>
                       </li>
@@ -136,7 +142,7 @@
         </div>
     </section>
 
-      <footer class="bg-dark text-white ">
+      <footer class="rosadito  ">
         <div class="row text-aling-center p-2">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="row">
